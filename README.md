@@ -31,6 +31,7 @@ You should see
 ```bash
 Server running on http://localhost:3000
 ```
+Go to http://localhost:3000 to see Chatter
 
 ---
 
