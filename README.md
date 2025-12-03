@@ -10,7 +10,7 @@ Chatter is a real-time group chat application where users can join with unique u
 
 ```bash
 git clone https://github.com/KevSun15/Chatter.git
-cd TrackJob
+cd Chatter
 ```
 
 ### 2. Install dependencies
