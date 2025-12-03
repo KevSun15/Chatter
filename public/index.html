@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="join-screen" class="screen active">
+        <div class="join-card">
+            <h1>Chatter</h1>
+            <form id="join-form">
+                <input type="text" id="username-input" class="input-std" placeholder="Display Name" autocomplete="off" maxlength="15" required>
+                <button type="submit" class="btn-primary">Join</button>
+            </form>
+            <p id="error-msg" class="error-text"></p>
+        </div>
+    </div>
+
+    <div id="chat-screen" class="screen chat-grid">
+        <aside id="sidebar">
+            <div class="sidebar-header">Online</div>
+            <ul id="users-list"></ul>
+        </aside>
+        <header>
+            <div class="room-info">
+                <span>Chatter</span>
+            </div>
+            <button id="leave-btn">Exit</button>
+        </header>
+
+        <main id="messages-container">
+            <div class="system-message">Welcome. You are connected.</div>
+        </main>
+        <div id="typing-indicator"></div>
+
+        <footer>
+            <form id="chat-form">
+                <input type="text" id="msg-input" class="input-std" placeholder="Type a message..." autocomplete="off">
+                <button type="submit" class="btn-primary">Send</button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
